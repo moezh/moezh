@@ -9,7 +9,7 @@ I am a **Senior Software Engineer**, specializing in **JavaScript**, **TypeScrip
 * **Specialty:** Agentic AI (Python, LangChain, ...)
 
 ### MH Studio Global
-Founder of **MH Studio**, serving: **🇺🇸 United States ([US](https://us.moezh.com/en)), 🇬🇧 United Kingdom ([UK](https://uk.moezh.com/en)), 🇨🇦 Canada ([CA](https://ca.moezh.com/en)), 🇫🇷 France ([FR](https://fr.moezh.com/en)), and 🇹🇳 Tunisia ([TN](https://tn.moezh.com/en))**.
+Founder of **[MH Studio](https://moezh.com/en)**, serving: **🇺🇸 United States ([US](https://us.moezh.com/en)), 🇬🇧 United Kingdom ([UK](https://uk.moezh.com/en)), 🇨🇦 Canada ([CA](https://ca.moezh.com/en)), 🇫🇷 France ([FR](https://fr.moezh.com/en)), and 🇹🇳 Tunisia ([TN](https://tn.moezh.com/en)).
 
 ---
 
@@ -22,7 +22,7 @@ Je suis **Ingénieur Logiciel Senior**, spécialisé dans les applications Full-
 * **Spécialité :** IA Agentique (Python, LangChain, ...)
 
 ### MH Studio Global
-Fondateur de **MH Studio**, desservant : **🇺🇸 États-Unis ([US](https://us.moezh.com/fr)), 🇬🇧 Royaume-Uni ([UK](https://uk.moezh.com/fr)), 🇨🇦 Canada ([CA](https://ca.moezh.com/fr)), 🇫🇷 France ([FR](https://fr.moezh.com/fr)), et 🇹🇳 Tunisie ([TN](https://tn.moezh.com/fr))**.
+Fondateur de **[MH Studio](https://moezh.com/fr)**, desservant : **🇺🇸 États-Unis ([US](https://us.moezh.com/fr)), 🇬🇧 Royaume-Uni ([UK](https://uk.moezh.com/fr)), 🇨🇦 Canada ([CA](https://ca.moezh.com/fr)), 🇫🇷 France ([FR](https://fr.moezh.com/fr)), et 🇹🇳 Tunisie ([TN](https://tn.moezh.com/fr))**.
 
 ---
 
