@@ -2,20 +2,20 @@
 
 ## 🇬🇧 English
 
-I am a **Senior Software Engineer**, specializing in **JavaScript**, **TypeScript**, and **React/Next.js** Full-Stack applications. I build **intelligent, scalable web solutions** focused on **Agentic AI** for **global markets**.
+I am a **Senior Software Engineer**, specializing in JavaScript, **TypeScript**, and **React/Next.js** Full-Stack applications. I build **intelligent, scalable web solutions** focused on **Agentic AI** for **global markets**.
 
 ### Core Expertise
 * **Tech Stack:** Next.js, TypeScript, React, Node.js, PostgreSQL & Redis, Tailwind CSS, AstroJS, GitHub Actions, Docker...
 * **Specialty:** Agentic AI, automation, and integration for intelligent workflows.
 
 ### MH Studio Global
-Founder of **[MH Studio](https://moezh.com/en)**, serving: **🇺🇸 United States ([US](https://us.moezh.com/en)), 🇬🇧 United Kingdom ([UK](https://uk.moezh.com/en)), 🇨🇦 Canada ([CA](https://ca.moezh.com/en)), 🇫🇷 France ([FR](https://fr.moezh.com/en)), and 🇹🇳 Tunisia ([TN](https://tn.moezh.com/en)).
+Founder of **[MH Studio](https://moezh.com/en)**, serving: **🇺🇸 United States ([US](https://us.moezh.com/en)), 🇬🇧 United Kingdom ([UK](https://uk.moezh.com/en)), 🇨🇦 Canada ([CA](https://ca.moezh.com/en)), 🇫🇷 France ([FR](https://fr.moezh.com/en)), and 🇹🇳 Tunisia ([TN](https://tn.moezh.com/en))**.
 
 ---
 
 ## 🇫🇷 Français
 
-Je suis **Ingénieur Logiciel Senior**, spécialisé dans les applications Full-Stack **JavaScript**, **TypeScript**, et **React/Next.js**. Mon expertise se concentre sur l'**IA Agentique** pour des solutions web intelligentes et évolutives pour les marchés **mondiaux**.
+Je suis **Ingénieur Logiciel Senior**, spécialisé dans les applications Full-Stack JavaScript, **TypeScript**, et **React/Next.js**. Mon expertise se concentre sur l'**IA Agentique** pour des solutions web intelligentes et évolutives pour les marchés **mondiaux**.
 
 ### Expertise Clé
 * **Stack Technique :** Next.js, TypeScript, React, Node.js, PostgreSQL & Redis, Tailwind CSS, AstroJS, GitHub Actions, Docker...
@@ -26,4 +26,4 @@ Fondateur de **[MH Studio](https://moezh.com/fr)**, desservant : **🇺🇸 Éta
 
 ---
 
-[💼 Organization GitHub](https://github.com/mh-studio-global)
+💼 [MH Studio Organization GitHub](https://github.com/mh-studio-global)
