@@ -1,0 +1,35 @@
+---
+interface Props {
+  className?: string;
+}
+const { className } = Astro.props;
+---
+
+<div
+  class={`${className || ""} transition opacity-0 translate-up`}
+  class-observer-in="opacity-100 translate-0"
+  class-observer-out="opacity-0 translate-up"
+>
+  <slot />
+</div>
+
+<style>
+  .transition {
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+    transition-delay: 0ms;
+  }
+  .opacity-0 {
+    opacity: 0;
+  }
+  .opacity-100 {
+    opacity: 1;
+  }
+  .translate-0 {
+    transform: translate(0px, 0px);
+  }
+  .translate-up {
+    transform: translateY(100%);
+  }
+</style>

@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check --minimumSeverity warning && astro build",
+    "preview": "wrangler pages dev",
+    "login": "wrangler login",
+    "create": "wrangler pages project create moezh --production-branch=main",
+    "deploy": "wrangler pages deploy --commit-dirty=true",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^5.13.0",
+    "tailwindcss": "^4.1.12",
+    "typescript": "^5.9.2",
+    "wrangler": "^4.30.0"
+  }
+}
