@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://moezh.com",
+  site: "https://www.moezh.com",
   image: {
     service: {
       entrypoint: "astro/assets/services/noop",
