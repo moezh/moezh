@@ -127,9 +127,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </style>
   </head>
   <body class="flex flex-col">
-    <header class="flex-shrink px-6 py-4 max-w-screen-lg mx-auto w-full">
+    <header class="shrink px-6 py-4 max-w-5xl mx-auto w-full">
       <div class="flex">
-        <div class="flex-shrink">
+        <div class="shrink">
           <a href="/" aria-label="Homepage">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -147,20 +147,20 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
             </svg>
           </a>
         </div>
-        <div class="flex-grow"></div>
-        <div class="flex-shrink">
+        <div class="grow"></div>
+        <div class="shrink">
           <div class="flex">
             <DarkModeButton />
           </div>
         </div>
       </div>
     </header>
-    <main class="flex-shrink pb-8">
+    <main class="shrink pb-8">
       <div class="flex flex-col">
         <slot />
       </div>
     </main>
-    <footer class="flex-shrink px-6 py-4 max-w-screen-lg mx-auto w-full">
+    <footer class="shrink px-6 py-4 max-w-5xl mx-auto w-full">
       <div class="flex flex-col">
         <div class="flex space-x-3">
           <a href="/contact" aria-label="Contact">Contact</a>
