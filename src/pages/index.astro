@@ -3,12 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import SlideUp from "../components/animations/SlideUp.astro";
 import SlideRight from "../components/animations/SlideRight.astro";
 import SlideLeft from "../components/animations/SlideLeft.astro";
-import Python from "../../public/assets/python.svg?raw";
-import PyTorch from "../../public/assets/pytorch.svg?raw";
 import LangChain from "../../public/assets/langchain.svg?raw";
 import OpenAI from "../../public/assets/openai.svg?raw";
 import HuggingFace from "../../public/assets/huggingface.svg?raw";
-import FastAPI from "../../public/assets/fastapi.svg?raw";
 import React from "../../public/assets/react.svg?raw";
 import NextJs from "../../public/assets/nextjs.svg?raw";
 import TypeScript from "../../public/assets/typescript.svg?raw";
@@ -39,6 +36,7 @@ import Docker from "../../public/assets/docker.svg?raw";
           create AI agents that solve real-world business problems, enhance
           productivity, and unlock new opportunities for growth.
         </p>
+        <p>{Math.random()}</p>
         <SlideUp>
           <p>
             <a target="_blank" href="https://calendly.com/moezh-com/30min">
@@ -435,7 +433,7 @@ import Docker from "../../public/assets/docker.svg?raw";
           <div class="flex flex-row flex-wrap justify-left">
             <div class="flex flex-col items-left w-1/4 min-w-24 py-8">
               <Fragment set:html={PostgreSQL} />
-              <p>PostgreSQL<br />+pgvector</p>
+              <p>PostgreSQL</p>
             </div>
             <div class="flex flex-col items-left w-1/4 min-w-24 py-8">
               <Fragment set:html={Redis} />
