@@ -3,6 +3,7 @@ import "../styles/global.css";
 import DarkModeSync from "../components/DarkModeSync.astro";
 import DarkModeButton from "../components/DarkModeButton.astro";
 import IntersectionObserver from "../components/IntersectionObserver.astro";
+import SlideUp from "../components/animations/SlideUp.astro";
 
 interface Props {
   title: string;
@@ -160,20 +161,22 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         <slot />
       </div>
     </main>
-    <footer class="shrink px-6 py-4 max-w-5xl mx-auto w-full">
-      <div class="flex flex-col">
-        <div class="flex space-x-3">
-          <a href="/contact" aria-label="Contact">Contact</a>
-          <a href="/privacy-policy" aria-label="Privacy Policy">
-            Privacy Policy
-          </a>
-          <a href="/terms-of-service" aria-label="Terms of Service">
-            Terms of Service
-          </a>
+    <SlideUp>
+      <footer class="shrink px-6 py-4 max-w-5xl mx-auto w-full">
+        <div class="flex flex-col">
+          <div class="flex space-x-3">
+            <a href="/contact" aria-label="Contact">Contact</a>
+            <a href="/privacy-policy" aria-label="Privacy Policy">
+              Privacy Policy
+            </a>
+            <a href="/terms-of-service" aria-label="Terms of Service">
+              Terms of Service
+            </a>
+          </div>
+          Copyright © {new Date().getFullYear()} - All right reserved.
         </div>
-        Copyright © {new Date().getFullYear()} - All right reserved.
-      </div>
-    </footer>
+      </footer>
+    </SlideUp>
     <IntersectionObserver />
   </body>
 </html>
