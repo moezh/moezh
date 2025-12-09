@@ -1,7 +1,7 @@
-Agentic AI & Autonomous Systems Expert
+Senior Full-Stack Engineer
 
-# Building Intelligent AI Agents
+# Building Scalable Web Platforms
 
-## Developing Autonomous Systems to Automate Workflows and Drive Innovation
+## Designing High-Performance Frontends & Robust Backends for Modern Products
 
-As a software engineer specializing in Agentic AI, I build intelligent, autonomous systems that think, plan, and execute complex tasks. My focus is on leveraging Large Language Models (LLMs) to create AI agents that solve real-world business problems, enhance productivity, and unlock new opportunities for growth.
+I specialize in the React / Node.js / TypeScript ecosystem, delivering scalable, maintainable, and high-performance applications end-to-end. I translate complex requirements into clean architectures, reliable systems, and production-ready features that drive real business impact.
