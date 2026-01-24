@@ -7,6 +7,57 @@ import Whatsapp from "../../public/assets/whatsapp.svg?raw";
 const schema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
+  "@id": "https://moezh.com/contact/#contactpage",
+  url: "https://moezh.com/contact/",
+  name: "Contact Moez H.",
+  description:
+    "Official contact page for Moez H. — email and WhatsApp for professional inquiries, collaborations, and support.",
+  inLanguage: "en",
+  primaryEntityOfPage: {
+    "@type": "Organization",
+    "@id": "https://moezh.com/#organization",
+  },
+  mainEntity: {
+    "@type": "Organization",
+    "@id": "https://moezh.com/#organization",
+    name: "Moez H.",
+    url: "https://moezh.com",
+    logo: "https://moezh.com/logo.svg",
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        "@id": "https://moezh.com/contact/#email",
+        contactType: "professional inquiries",
+        email: "contact@moezh.com",
+        availableLanguage: ["English", "french"],
+      },
+      {
+        "@type": "ContactPoint",
+        "@id": "https://moezh.com/contact/#whatsapp",
+        contactType: "WhatsApp support",
+        telephone: "+21629133300",
+        availableLanguage: ["English", "french"],
+      },
+    ],
+  },
+  potentialAction: [
+    {
+      "@type": "CommunicateAction",
+      name: "Send Email to Moez H.",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "mailto:contact@moezh.com",
+      },
+    },
+    {
+      "@type": "CommunicateAction",
+      name: "Message via WhatsApp",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://wa.me/21629133300",
+      },
+    },
+  ],
 };
 ---
 
