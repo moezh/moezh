@@ -18,35 +18,54 @@ import Cloudflare from "../../public/assets/cloudflare.svg?raw";
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://moezh.com/#homepage",
-  url: "https://moezh.com",
-  name: "Moez H. - Full-Stack Senior Software Engineer",
-  description:
-    "Official homepage of Moez H. - Senior Software Engineer specializing in high-scale React/Node.js platforms. Build, design, and optimize end-to-end scalable systems.",
-  inLanguage: "en",
-  mainEntity: {
-    "@type": "Organization",
-    "@id": "https://moezh.com/#organization",
-    name: "Moez H.",
-    url: "https://moezh.com",
-    logo: "https://moezh.com/logo.svg",
-    sameAs: ["https://www.linkedin.com/in/moez-h", "https://github.com/moezh"],
-    contactPoint: [
-      {
-        "@type": "ContactPoint",
-        contactType: "email",
-        email: "contact@moezh.com",
-        availableLanguage: ["English", "French"],
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://moezh.com/#person",
+      name: "Moez Hachicha",
+      jobTitle: "Senior Software Engineer",
+      url: "https://moezh.com",
+      sameAs: [
+        "https://www.linkedin.com/in/moez-h",
+        "https://github.com/moezh",
+      ],
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://moezh.com/#homepage",
+      url: "https://moezh.com",
+      name: "Moez H. - Full-Stack Senior Software Engineer",
+      description:
+        "Official homepage of Moez H. - Senior Software Engineer specializing in high-scale React/Node.js platforms. Build, design, and optimize end-to-end scalable systems.",
+      inLanguage: "en",
+      mainEntity: {
+        "@type": "Organization",
+        "@id": "https://moezh.com/#organization",
+        name: "Moez H.",
+        url: "https://moezh.com",
+        logo: "https://moezh.com/logo.svg",
+        founder: { "@id": "https://moezh.com/#person" },
+        sameAs: [
+          "https://www.linkedin.com/in/moez-h",
+          "https://github.com/moezh",
+        ],
+        contactPoint: [
+          {
+            "@type": "ContactPoint",
+            contactType: "email",
+            email: "contact@moezh.com",
+            availableLanguage: ["English", "French"],
+          },
+          {
+            "@type": "ContactPoint",
+            contactType: "WhatsApp",
+            telephone: "+21629133300",
+            availableLanguage: ["English", "French"],
+          },
+        ],
       },
-      {
-        "@type": "ContactPoint",
-        contactType: "WhatsApp",
-        telephone: "+21629133300",
-        availableLanguage: ["English", "French"],
-      },
-    ],
-  },
+    },
+  ],
 };
 ---
 

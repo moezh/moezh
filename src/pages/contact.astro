@@ -6,51 +6,71 @@ import Whatsapp from "../../public/assets/whatsapp.svg?raw";
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "@id": "https://moezh.com/contact/#contact",
-  url: "https://moezh.com/contact/",
-  name: "Contact Moez H.",
-  description:
-    "Official contact page for Moez H. - contact via email or WhatsApp.",
-  inLanguage: "en",
-  mainEntity: {
-    "@type": "Organization",
-    "@id": "https://moezh.com/#organization",
-    name: "Moez H.",
-    url: "https://moezh.com",
-    logo: "https://moezh.com/logo.svg",
-    sameAs: ["https://www.linkedin.com/in/moez-h", "https://github.com/moezh"],
-    contactPoint: [
-      {
-        "@type": "ContactPoint",
-        contactType: "email",
-        email: "contact@moezh.com",
-        availableLanguage: ["English", "French"],
-      },
-      {
-        "@type": "ContactPoint",
-        contactType: "WhatsApp",
-        telephone: "+21629133300",
-        availableLanguage: ["English", "French"],
-      },
-    ],
-  },
-  potentialAction: [
+  "@graph": [
     {
-      "@type": "CommunicateAction",
-      name: "Send Email",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: "mailto:contact@moezh.com",
-      },
+      "@type": "Person",
+      "@id": "https://moezh.com/#person",
+      name: "Moez Hachicha",
+      jobTitle: "Senior Software Engineer",
+      url: "https://moezh.com",
+      sameAs: [
+        "https://www.linkedin.com/in/moez-h",
+        "https://github.com/moezh",
+      ],
+      knowsAbout: ["React", "Node.js", "TypeScript", "PostgreSQL"],
     },
     {
-      "@type": "CommunicateAction",
-      name: "Chat on WhatsApp",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: "https://wa.me/21629133300",
+      "@type": "ContactPage",
+      "@id": "https://moezh.com/contact/#contact",
+      url: "https://moezh.com/contact/",
+      name: "Contact Moez H.",
+      description:
+        "Official contact page for Moez H. - contact via email or WhatsApp.",
+      inLanguage: "en",
+      mainEntity: {
+        "@type": "Organization",
+        "@id": "https://moezh.com/#organization",
+        name: "Moez H.",
+        url: "https://moezh.com",
+        logo: "https://moezh.com/logo.svg",
+        founder: { "@id": "https://moezh.com/#person" },
+        sameAs: [
+          "https://www.linkedin.com/in/moez-h",
+          "https://github.com/moezh",
+        ],
+        contactPoint: [
+          {
+            "@type": "ContactPoint",
+            contactType: "email",
+            email: "contact@moezh.com",
+            availableLanguage: ["English", "French"],
+          },
+          {
+            "@type": "ContactPoint",
+            contactType: "WhatsApp",
+            telephone: "+21629133300",
+            availableLanguage: ["English", "French"],
+          },
+        ],
       },
+      potentialAction: [
+        {
+          "@type": "CommunicateAction",
+          name: "Send Email",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: "mailto:contact@moezh.com",
+          },
+        },
+        {
+          "@type": "CommunicateAction",
+          name: "Chat on WhatsApp",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: "https://wa.me/21629133300",
+          },
+        },
+      ],
     },
   ],
 };
