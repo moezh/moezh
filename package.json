@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "login": "wrangler login",
+    "types": "wrangler types",
+    "dev": "bun run types && astro dev",
+    "build": "rm -rf build && bun run types && astro build",
+    "preview": "bun run build && wrangler dev",
+    "deploy": "bun run build && wrangler deploy",
+    "clean": "rm -rf .astro .wrangler dist node_modules bun.lock",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "latest",
+    "astro": "latest",
+    "wrangler": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "latest"
+  }
+}

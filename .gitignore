@@ -1,0 +1,6 @@
+.DS_Store
+.vscode/
+.wrangler/
+.astro/
+dist/
+node_modules/

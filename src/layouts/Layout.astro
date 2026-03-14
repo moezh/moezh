@@ -1,0 +1,87 @@
+---
+import "@/styles/global.css";
+
+import Logo from "@/assets/logo.svg?raw";
+import Favicon from "@/assets/favicon.svg?raw";
+import DarkModeSync from "@/components/DarkModeSync.astro";
+import DarkModeButton from "@/components/DarkModeButton.astro";
+import IntersectionObserver from "@/components/IntersectionObserver.astro";
+
+type JsonLd = {
+  "@context": "https://schema.org";
+  "@type": string;
+  "@id"?: string;
+  [key: string]: unknown;
+};
+interface Props {
+  title: string;
+  description?: string;
+  schema?: JsonLd;
+}
+const { title, description, schema } = Astro.props;
+const url = Astro.url;
+const resolvedSchema: JsonLd = schema ?? {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": url.href,
+  url: url.href,
+  name: title ?? "",
+  description: description ?? "",
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": url.origin + "/#website"
+  }
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href=`data:image/svg+xml,${Favicon}`
+      sizes="any"
+    />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <link rel="canonical" href={url.href} />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:url" content={url.href} />
+    <meta property="og:type" content="website" />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(resolvedSchema)}
+    />
+    <DarkModeSync />
+  </head>
+  <body class="flex col">
+    <header class="flex row shrink">
+      <div
+        class="logo"
+        set:html={`<a href="/" aria-label="Homepage">${Logo}</a>`}
+      />
+      <DarkModeButton />
+    </header>
+    <main class="flex col grow">
+      <slot />
+    </main>
+    <footer class="flex col shrink">
+      <div class="flex row gap">
+        <a href="/contact/" aria-label="Contact">Contact</a>
+        <a href="/privacy-policy/" aria-label="Privacy Policy">
+          Privacy Policy
+        </a>
+        <a href="/terms-of-service/" aria-label="Terms of Service">
+          Terms of Service
+        </a>
+      </div>
+      <i>Copyright © {new Date().getFullYear()} - All right reserved.</i>
+    </footer>
+    <IntersectionObserver />
+  </body>
+</html>

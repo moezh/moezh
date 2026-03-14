@@ -1,0 +1,27 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Email from "@/assets/email.svg?raw";
+import SlideUp from "@/components/animations/SlideUp.astro";
+
+const title = "Contact";
+const description =
+    "If you have any questions, inquiries, or concerns, no matter how big or small, please do not hesitate to reach out to us.";
+---
+
+<Layout title={title} description={description}>
+    <h1>{title}</h1>
+    <p>{description}</p>
+    <br />
+    <SlideUp>
+        <a
+            href={`mailto:contact@moezh.com`}
+            target="_blank"
+            aria-label="Get in touch via email"
+            class="flex col"
+        >
+            <Fragment set:html={Email} />
+            <div>Email</div>
+            <small>contact@moezh.com</small>
+        </a>
+    </SlideUp>
+</Layout>

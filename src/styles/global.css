@@ -1,0 +1,227 @@
+:root {
+  --sans-font: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --serif-font: ui-serif, "Times New Roman", Times, Georgia, serif;
+  --mono-font: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+  --max-width: 1280px;
+  --size-small: 0.5em;
+  --size-base: 1em;
+  --size-medium: 1.25em;
+  --size-large: 1.5em;
+  --size-xl: 2em;
+  --size-xxl: 3em;
+  --background: 0 0% 100%;
+  --foreground: 0 0% 20%;
+  --muted: 0 0% 95%;
+  --border: 0 0% 90%;
+  --logo-width: 64px;
+  --logo-height: 32px;
+}
+
+html {
+  all: unset;
+  display: block;
+  overflow-x: hidden;
+  min-width: 360px;
+}
+
+html[data-theme="dark"] {
+  --background: 0 0% 3%;
+  --foreground: 0 0% 92%;
+  --muted: 0 0% 8%;
+  --border: 0 0% 13%;
+}
+
+body {
+  all: unset;
+  display: block;
+  font-family: var(--sans-font);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-size: var(--size-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  padding-left: var(--size-large);
+  padding-right: var(--size-large);
+  max-width: var(--max-width);
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  all: unset;
+  width: 100%;
+  padding-top: var(--size-large);
+  padding-bottom: var(--size-base);
+}
+
+main {
+  all: unset;
+  width: 100%;
+}
+
+footer {
+  all: unset;
+  width: 100%;
+  padding-top: var(--size-xl);
+  padding-bottom: var(--size-large);
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.shrink {
+  flex-shrink: 1;
+}
+
+.gap {
+  gap: var(--size-base);
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  width: var(--logo-width);
+  height: var(--logo-height);
+}
+
+.logo svg {
+  width: var(--logo-width);
+  height: var(--logo-height);
+}
+
+h1 {
+  all: unset;
+  font-family: var(--serif-font);
+  font-size: var(--size-xl);
+  line-height: var(--size-large);
+  font-weight: bold;
+  padding-top: var(--size-small);
+}
+
+h2 {
+  all: unset;
+  font-family: var(--serif-font);
+  font-size: var(--size-large);
+  line-height: var(--size-large);
+  font-weight: bold;
+  padding-top: var(--size-base);
+}
+
+h3 {
+  all: unset;
+  font-family: var(--serif-font);
+  font-size: var(--size-medium);
+  line-height: var(--size-large);
+  font-weight: bold;
+  padding-top: var(--size-small);
+}
+
+p {
+  all: unset;
+  line-height: var(--size-large);
+  padding-top: var(--size-base);
+}
+
+i {
+  all: unset;
+  font-weight: lighter;
+  line-height: var(--size-large);
+}
+
+small {
+  all: unset;
+  font-size: smaller;
+  line-height: var(--size-large);
+}
+
+ol {
+  all: unset;
+  list-style-type: decimal;
+  line-height: var(--size-large);
+  margin-left: var(--size-base);
+  padding-top: var(--size-base);
+}
+
+ul {
+  all: unset;
+  list-style-type: disc;
+  line-height: var(--size-large);
+  margin-left: var(--size-base);
+  padding-top: var(--size-base);
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  line-height: var(--size-large);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.button {
+  all: unset;
+  display: inline-block;
+  font-family: var(--serif-font);
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--border));
+  border-radius: var(--size-small);
+  padding: var(--size-base) var(--size-xl);
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+hr {
+  all: unset;
+  color: hsl(var(--border));
+  margin: var(--size-large) 0;
+}
+
+table {
+  all: unset;
+  margin-top: var(--size-small);
+  padding-left: var(--size-large);
+  padding-right: var(--size-large);
+}
+
+th {
+  all: unset;
+  font-family: var(--serif-font);
+  font-weight: bold;
+  line-height: var(--size-large);
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--muted));
+  padding: var(--size-base) var(--size-small);
+}
+
+td {
+  all: unset;
+  border: 1px solid hsl(var(--border));
+  padding: var(--size-small) var(--size-small);
+}
