@@ -1,5 +1,5 @@
 {
-  "name": "astro",
+  "name": "moezh",
   "main": "dist/_worker.js/index.js",
   "compatibility_date": "2026-03-06",
   "compatibility_flags": [
@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "pattern": "astro.moezh.com",
+      "pattern": "moezh.com",
       "custom_domain": true
     }
   ],
