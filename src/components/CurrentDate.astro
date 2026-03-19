@@ -1,0 +1,15 @@
+---
+const serverDate = new Date();
+---
+
+<i id="live-date">{serverDate.toLocaleString()}</i>
+
+<script is:inline>
+  const dateElement = document.getElementById("live-date");
+  if (dateElement) {
+    dateElement.textContent = new Date().toString();
+    setInterval(() => {
+      dateElement.textContent = new Date().toString();
+    }, 1000);
+  }
+</script>
