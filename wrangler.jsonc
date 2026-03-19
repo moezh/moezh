@@ -1,28 +1,28 @@
 {
-  "name": "moezh",
-  "compatibility_date": "2026-03-06",
-  "compatibility_flags": [
-    "nodejs_compat",
-    "global_fetch_strictly_public"
-  ],
-  "routes": [
-    {
-      "pattern": "moezh.com",
-      "custom_domain": true
-    }
-  ],
-  "preview_urls": false,
-  "workers_dev": false,
-  "assets": {
-    "binding": "ASSETS",
-    "directory": "./dist",
-    "not_found_handling": "404-page",
-    "run_worker_first": [
-      "/worker/*.json",
-      "/worker/**/*.json"
-    ]
-  },
-  "observability": {
-    "enabled": true
-  }
+	"name": "moezh",
+	"compatibility_date": "2026-03-06",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
+	"routes": [
+		{
+			"pattern": "moezh.com",
+			"custom_domain": true
+		}
+	],
+	"preview_urls": false,
+	"workers_dev": false,
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist",
+		"not_found_handling": "404-page",
+		"run_worker_first": [
+			"/worker/*.json",
+			"/worker/**/*.json"
+		]
+	},
+	"observability": {
+		"enabled": true
+	}
 }
